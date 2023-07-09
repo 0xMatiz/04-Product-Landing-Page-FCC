@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background: linear-gradient(
+      90deg,
+      black 60%,
+      grey 100%
+    );
+  }
+}
