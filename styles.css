@@ -38,12 +38,14 @@ ul {
 
 #nav-bar {
   display: flex;
+  align-items: center;
 }
 
 .nav-link {
   color: #fff;
   text-decoration: none;
   padding: 10px 15px;
+  margin-right: 10px;
 }
 
 /* Main Content */
@@ -51,6 +53,9 @@ main {
   flex: 1;
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 video {
@@ -123,6 +128,8 @@ input[type="submit"]:hover {
 
   .nav-link {
     padding: 8px 12px;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
   video {
