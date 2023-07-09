@@ -1,23 +1,139 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
 body {
   display: flex;
-  width: 50%;
-  height: 50%;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+}
+
+h2 {
+  color: #ff9327;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #222222;
+}
+
+#header-img {
+  width: 150px;
 }
 
 #nav-bar {
-  position: fixed;
-  top: 0px;
+  display: flex;
 }
 
-@media (max-width: 1000px) {
-  body {
-    background: linear-gradient(
-      90deg,
-      black 60%,
-      grey 100%
-    );
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.divider {
+  height: 2px;
+  background-color: #333333;
+  margin: 20px 0;
+}
+
+#subscription {
+  margin-bottom: 20px;
+}
+
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input[type="email"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ff9327;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #d67e17;
+}
+
+/* Footer */
+#footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #222222;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header-img {
+    margin-bottom: 10px;
+  }
+
+  #nav-bar {
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    padding: 8px 12px;
+  }
+
+  video {
+    max-width: 100%;
+  }
+
+  #form {
+    flex-direction: column;
+  }
+
+  input[type="email"] {
+    margin-bottom: 10px;
   }
 }

@@ -1,43 +1,62 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header id="header">
-      <img 
-        id="header-img"
-        src=""
-        alt=""      
-      />
-      <nav id="nav-bar">
-        <a href="#video" class="nav-link">Clickable 1</a>
-        <a href="#email" class="nav-link">Clickable 2</a>
-        <a href="#submit" class="nav-link">Clickable 3</a>
-      </nav>
-    </header>
-    <video 
-      id="video" 
-      controls="controls" 
-      src="https://www.youtube.com/watch?v=hbGiNEjqYL0&ab_channel=Nikilopapu"
-    />
-      Your browser does not support the HTML5 Video element.
-    </video>
-    <div class="divider"></div>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input 
-        id="email" 
-        type="email"
-        name="email"
-        required
-        placeholder="name@email.com" 
-      />
-      <input
-        id="submit" 
-        type="submit" 
-      />
-    </form>
-  </body>
-</html>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+      <header id="header">
+        <img 
+          id="header-img"
+          src="https://www.nicepng.com/png/full/0-4950_halo-hearthstone-hearthstone-symbol.png"
+          alt="Hearthstone Logo"
+        />
+        <nav id="nav-bar">
+          <a href="#video" class="nav-link">Features</a>
+          <a href="#email" class="nav-link">Subscribe</a>
+          <a href="#submit" class="nav-link">Get Started</a>
+        </nav>
+      </header>
+      <main>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oC6Rro6Eo9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="divider"></div>
+        <section id="subscription">
+          <h2>Unlock Premium Features</h2>
+          <p>Subscribe now to access exclusive content and benefits:</p>
+          <ul>
+            <li>Advanced deck tracking</li>
+            <li>Personalized statistics</li>
+            <li>Deck recommendations</li>
+          </ul>
+          <form id="form" action="https://www.example.com/subscribe">
+            <input 
+              id="email" 
+              type="email"
+              name="email"
+              required
+              placeholder="Enter your email" 
+            />
+            <input
+              id="submit" 
+              type="submit" 
+              value="Subscribe"
+            />
+          </form>
+        </section>
+        <section id="deck-tracker">
+          <h2>Hearthstone Deck Tracker</h2>
+          <p>The Hearthstone Deck Tracker is a powerful tool for avid Hearthstone players. It offers the following features:</p>
+          <ul>
+            <li><strong>Advanced deck tracking:</strong> Keep track of the cards in your deck, the cards you have drawn, and the cards your opponent has played.</li>
+            <li><strong>Personalized statistics:</strong> Analyze your gameplay with detailed statistics, such as win rate, average mana curve, and card draw percentages.</li>
+            <li><strong>Deck recommendations:</strong> Get suggestions for optimizing your deck based on popular meta decks and current win rates.</li>
+          </ul>
+        </section>
+      </main>
+      <footer id="footer">
+        <p>This website is created for educational purposes related to front-end development learning. It is not intended for commercial use.</p>
+      </footer>
+      <script src="./script.js"></script>
+    </body>
+  </html>
