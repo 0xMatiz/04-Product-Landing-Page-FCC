@@ -25,9 +25,6 @@ ul {
 
 /* Header */
 #header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px;
   background-color: #222222;
 }
@@ -143,4 +140,9 @@ input[type="submit"]:hover {
   input[type="email"] {
     margin-bottom: 10px;
   }
+}
+
+/* Additional Styles */
+a {
+  color: #ff9327;
 }
