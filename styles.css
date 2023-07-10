@@ -99,14 +99,14 @@ input[type="email"] {
 
 input[type="submit"] {
   padding: 10px 20px;
-  background-color: #ff9327;
+  background-color: #ff6f00;
   color: #fff;
   border: none;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #d67e17;
+  background-color: #d65e00;
 }
 
 /* Footer */
